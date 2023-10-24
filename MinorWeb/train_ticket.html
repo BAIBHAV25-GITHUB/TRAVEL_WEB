@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <title>Bookings</title>
+    <style>
+        *{
+            font-family:"Poppins";
+            margin-left: 0%;
+        }
+        .c1{
+            display: flex;
+            margin-bottom: 0%;
+        }
+        .log{
+            display: block;
+            margin-top: 1%;
+            margin-left: 972px;
+            font-weight: bold;
+            padding-bottom: 0px;
+            font-size: 1.0rem;
+        }
+        .c2{
+            margin-top: 0%;
+            margin-bottom: 0%;
+            background-image: url(train.avif);
+            background-size: cover;
+            width: 1350px;
+            height: 650px;
+        }
+        .box{
+           border-radius: 3px;
+           margin-top: 6%;
+           margin-left: 10%;
+           padding:20px 30px;
+           font-family:"Poppins";
+           font-weight: bold;
+           background-color: rgb(241, 231, 231, 0.5);
+           max-width: 980px;
+           min-height: 150px;
+        }    
+        .b1{
+            display: flex;
+            margin-top: 3%;
+        }
+        label{
+            display: block;
+            padding-bottom: 20px;
+            font-size: 1.0rem;
+        }
+        .btn1{
+            
+            height:25px;
+		    width:70px;
+		    border:1px rgba(231, 218, 210, 0.986);
+            border-radius: 4px;
+		    color:#f1e1e1;
+            font-family:"Poppins";
+            font-weight:bold;
+		    cursor: pointer;
+            background-color: rgba(36, 34, 33, 0.856);   
+	    }
+        .btn1:hover{
+            background-color:rgba(108, 209, 240, 0.925);
+            color:#131111;
+		    opacity: 0.8;
+	    }
+        .btn2{
+            
+		    height:30px;
+		    width:150px;
+		    border:1px rgba(231, 218, 210, 0.986);
+            border-radius: 4px;
+		    color:#f1e1e1;
+            font-family:"Poppins";
+            font-weight:bold;
+		    cursor: pointer;
+            background-color: rgba(36, 34, 33, 0.856);   
+	    }
+        .btn2:hover{
+            background-color:rgba(108, 209, 240, 0.925);
+            color:#131111;
+		    opacity: 0.8;
+	    }
+    </style>
+</head>
+<body>
+    <div class="c1">
+        <div>
+            <h1>Train<i class="fa-solid fa-train-subway fa-1.7x"></i></h1>
+        </div> 
+        <div class="log">
+            <label for="login" style="font-size: 25px;"><i class="fa-regular fa-circle-user fa-1.5x"></i>Login</label>
+            <input type="text" value="">
+            <button class="btn1">Login</button>
+        </div>
+    </div>
+    <div class="c2">
+        <p style="font-weight: bold; font-size: 40px; color: #131111;">"Think again, take a train..."</p>
+        <div class="box">
+            <div class="b1">
+                <label for="station">From:</label>
+                <input type="text" value="Station">
+                <label for="station">To:</label>
+                <input type="text" value="Station">
+                <label for="date">Depart</label>
+                <input type="date" name="mydate">
+        
+                <label for="class">Tier:</label>
+                    <select>
+                        <option value="sleep" selected>Sleeper</option>
+                        <option value="ac">Air-Conditioned First Class (1AC)</option>
+                        <option value="ac">Air-Conditioned Two-Tier Class (2AC)</option>
+                        <option value="ac">Air-Conditioned Three-Tier Class (3AC)</option>
+                        <option value="gen">Unreserved/General Class (2S)</option>
+                    </select>
+            
+            </div><br><br>
+            <div >
+                <button class="btn2">Search Trains</button>
+            </div>
+        </div>  
+    </div>
+</body>
+</html>
