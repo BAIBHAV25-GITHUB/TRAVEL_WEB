@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="TT.css">
+
+    <title>Bookings</title>
+
+</head>
+
+<body>
+    <img src="train.jpg" alt="" id="image">
+    <div class="c1">
+        <div>
+            <h1 style=" font-size:25px; margin-top: 0%; color:#ffffff">Train<i class="fa-solid fa-train-subway fa-1.7x"
+                    style="color: #ffffff;"></i></h1>
+        </div>
+        <div class="log">
+            <label for="login" style="font-size: 25px;"><i class="fa-regular fa-circle-user fa-1.5x"
+                    style="color:rgb(255, 255, 255); margin-top: 0%;"></i></label>
+            <input type="text" value="" class="login" placeholder="Log-in ID">
+            <button class="btn1">Login</button>
+        </div>
+    </div>
+    <div class="c2">
+        <h2 class="c2h2">"Think again, take <br>a train..."</h2>
+        <div class="box">
+            <div class="b1">
+                <div>
+                    <label for="station">From:</label>
+                    <input type="text" list="datalistOptions1" id="origin" class="inFrom" placeholder="City" required>
+                    <datalist id="datalistOptions1">
+                        <option value="MUMBAI"></option>
+                        <option value="BANGALORE"></option>
+                        <option value="CHENNAI"></option>
+                        <option value="KOLKATA"></option>
+                        <option value="LUCKNOW"></option>
+                        <option value="VISAKHAPATNAM"></option>
+                        <option value="KANNUR"></option>
+                        <option value="INDORE"></option>
+                        <option value="DELHI"></option>
+                        <option value="AHMEDABAD"></option>
+                        <option value="HYDERABAD"></option>
+                        <option value="JAIPUR"></option>
+                        <option value="GOA"></option>
+                        <option value="BHUBANESWAR"></option>
+                        <option value="SRINAGAR"></option>
+                        <option value="IMPHAL"></option>
+                        <option value="PATNA"></option>
+                        <option value="SILIGURI"></option>
+                        <option value="GUWAHATI"></option>
+                    </datalist>
+                </div>
+                <div>
+                    <label for="station">To:</label>
+                    <input type="text" list="datalistOptions2" id="destination" class="inTo" placeholder="City"
+                        required>
+                    <datalist id="datalistOptions2">
+                        <option value="MUMBAI"></option>
+                        <option value="JAIPUR"></option>
+                        <option value="KOLKATA"></option>
+                        <option value="DELHI"></option>
+                        <option value="PUNE"></option>
+                        <option value="SILIGURI"></option>
+                    </datalist>
+                </div>
+                <div>
+                    <label for="date">Depart</label>
+                    <input type="date" name="mydate">
+                </div>
+                <div>
+                    <label for="class">Tier:</label>
+                    <input type="text" list="datalistOptions3" class="seat" placeholder="Class">
+                    <datalist id="datalistOptions3">
+                        <option value="Sleeper"></option>
+                        <option value="Air-Conditioned First Class (1AC)" selected></option>
+                        <option value="Air-Conditioned Two-Tier Class (2AC)" ></option>
+                        <option value="Air-Conditioned Three-Tier Class (3AC)" ></option>
+                        <option value="Unreserved/General Class (2S)" ></option>
+                    </datalist>
+                </div>
+            </div><br>
+            <div>
+                <button class="btn2">Search Trains</button>
+            </div>
+
+        </div>
+
+    </div>
+    </div>
+</body>
+
+</html>

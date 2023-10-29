@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camera</title>
+    <script type="text/javascript" src="https://unpkg.com/webcam-easy/dist/webcam-easy.min.js"></script>
+    <style>
+        a {
+            display: block;
+            padding: 10px;
+            background-color: orange;
+            color: aliceblue;
+            text-decoration: none;
+            text-align: center;
+        }
+        a:hover{
+            background-color: rgb(255, 140, 0);
+        }
+        canvas{
+            display: none;
+        }
+        #webCam{
+            /* border: 2px solid; */
+            width: 185px;
+            height:138px;
+        }
+    </style>
+</head>
+
+<body>
+    <video src="" id="webCam" autoplay playsinlne width="800" height="600"></video>
+    <canvas id="canvas"></canvas>
+    <div>
+        <a download onclick="takePicture()">Click</a>
+    </div>
+    
+
+
+
+    <script>
+        const webCamElement = document.getElementById("webCam");
+        const canvasElement=document.getElementById("canvas");
+        const webcam= new Webcam(webCamElement,"user",canvasElement);
+        webcam.start();
+        function takePicture(){
+            let picture= webcam.snap();
+            document.querySelector("a").href=picture;
+        }
+    </script>
+</body>
+
+</html>

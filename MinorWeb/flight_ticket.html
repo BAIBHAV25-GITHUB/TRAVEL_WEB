@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Dancing+Script&family=Eczar:wght@500&family=Gelasio:ital@1&family=Kaushan+Script&family=Lato:wght@300&family=Lobster&family=Merriweather:ital@1&family=PT+Serif:ital@1&family=Roboto+Slab:wght@200;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="FT.css">
+
+    <title>Bookings</title>
+</head>
+
+
+<body>
+    <img src="aeroplane.jpg" alt="" id="image">
+    <div class="c1">
+        <div class="c111">
+            <h3 style=" font-size:25px; margin-top: 0%;">Book your flight<i class="fa-solid fa-plane-departure fa-1.5x"
+                    style="color: #ffffff;"></i></h3>
+        </div>
+        <div class="log">
+            <label for="login" style="font-size: 25px;"><i class="fa-regular fa-circle-user fa-1.5x"
+                    style="color:rgb(255, 255, 255); margin-top: 0%;"></i></label>
+            <input type="text" value="" class="login" placeholder="Log-in ID">
+            <button class="btn1">Login</button>
+        </div>
+    </div>
+    <div class="c2">
+        <h2 class="c2h2">LET YOUR DREAMS<br>TAKE FLIGHT</h2>
+        <form action="">
+            <div class="box">
+                <div class="rad">
+                    <div class="r1">
+                        <input type="radio" name="way" onclick="displayDate1()" checked>
+                        <label for="way">One-way</label>
+                    </div>
+                    <div class="r2">
+                        <input type="radio" name="way" onclick="displayDate2()">
+                        <label for="way">Return:</label>
+                    </div>
+                </div><br>
+                <div class="b2">
+                    <div>
+                        <label for="airport">From:</label>
+                        <input type="text" list="datalistOptions1" id="origin" class="inFrom"
+                            placeholder="City" required>
+                        <datalist id="datalistOptions1">
+                            <option value="MUMBAI"></option>
+                            <option value="BANGALORE"></option>
+                            <option value="CHENNAI"></option>
+                            <option value="KOLKATA"></option>
+                            <option value="LUCKNOW"></option>
+                            <option value="VISAKHAPATNAM"></option>
+                            <option value="KANNUR"></option>
+                            <option value="INDORE"></option>
+                            <option value="DELHI"></option>
+                            <option value="AHMEDABAD"></option>
+                            <option value="HYDERABAD"></option>
+                            <option value="JAIPUR"></option>
+                            <option value="GOA"></option>
+                            <option value="BHUBANESWAR"></option>
+                            <option value="SRINAGAR"></option>
+                            <option value="IMPHAL"></option>
+                            <option value="PATNA"></option>
+                            <option value="SILIGURI"></option>
+                            <option value="GUWAHATI"></option>
+                        </datalist>
+                    </div>
+                    <div>
+                        <label for="airport">To:</label>
+                        <input type="text" list="datalistOptions2" id="destination" class="inTo"
+                            placeholder="City" required>
+                        <datalist id="datalistOptions2">
+                            <option value="MUMBAI"></option>
+                            <option value="JAIPUR"></option>
+                            <option value="KOLKATA"></option>
+                            <option value="DELHI"></option>
+                            <option value="PUNE"></option>
+                            <option value="SILIGURI"></option>
+                        </datalist>
+                    </div>
+
+                    <div class="date">
+                        <label for="date">Departure:</label>
+                        <input type="date" name="mydate" class="dt" required>
+                    </div>
+                    <div class="retdate">
+                        <label for="date" id="returnDate1">Return</label>
+                        <input type="date" id="returnDate2"  name="mydate">
+                    </div>
+                        
+                    <div>
+                        <label for="class">Cabin Class:</label>
+                        <input type="text" list="datalistOptions3" class="seat" placeholder="Class">
+                        <datalist id="datalistOptions3">
+                            <option value="Economy" selected></option>
+                            <option value="Premium Economy"></option>
+                            <option value="Business"></option>
+                            <option value="First Class"></option>
+                        </datalist>
+                    </div>
+                </div>
+                <br>
+                <div>
+                    <button class="btn2" id="searchButton">Search Flights</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script src="flight.js">
+    </script>
+</body>
+
+
+</html>
